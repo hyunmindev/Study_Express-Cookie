@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1= value
+    form(action='/set' method='post')
+        input(name='value')
+        input(type='submit' value='저장')
